@@ -411,6 +411,10 @@ template {
   background-color: #EC1F46;
 }
 
+.input {
+  outline: none;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
