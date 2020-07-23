@@ -38,4 +38,5 @@ function init() {
     );
 
   myMap.geoObjects.add(myGeoObject);
+  myMap.behaviors.disable("scrollZoom");
 }
