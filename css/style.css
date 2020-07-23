@@ -1043,6 +1043,94 @@ template {
   right: 0;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+  margin-top: 0;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.card__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  padding: 7px 22px;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1053,6 +1141,10 @@ template {
   .hotel-slider__img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1107,6 +1199,17 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
   }
 }
 
@@ -1200,6 +1303,14 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1227,6 +1338,9 @@ template {
     margin-right: -65px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+  }
+  .card {
+    width: 100%;
   }
 }
 
