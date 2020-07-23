@@ -14,6 +14,8 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
   </head>
   <body>
     <header class="navbar">
@@ -248,7 +250,12 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section class="newsletter">
+    <div></div>
+    <section
+      class="newsletter parallax-container"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
