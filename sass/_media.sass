@@ -8,7 +8,13 @@
         object-fit: cover  
   .card
     width: 230px
-    height: 230px        
+    height: 230px     
+  .packages
+    &-card
+      width: 300px
+      max-height: 450px  
+    &-card:first-child
+      width: auto    
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -54,9 +60,32 @@
   .card
     width: 339px
     height: 255px
-                   
+  .packages
+    &__title
+      margin-bottom: 50px
+    &-wrapper
+      max-width: 700px
+      grid-template-rows: 1fr 1fr
+      grid-template-columns: 1fr 1fr
+      grid-row-gap: 10px
+      grid-column-gap: 10px
+    &-card
+      width: 350px
+      max-height: 500px  
+    &-card:first-child
+      width: 350px
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-template-rows: 50% 50%
+      grid-template-columns: 100% 
+    &-card:last-child
+      display: none       
+    &__text
+      display: none  
+    &__stars
+      display: none   
 @media (max-width: 768px)
-  .container
+  .container, .packages-wrapper
     max-width: 576px
     width: 92%
   .navbar
@@ -112,17 +141,27 @@
       align-items: flex-start
       max-width: 576px
       width: 92%
+  .reviews
+    padding-bottom: 20px   
   .activities
     padding-top: 40px
     padding-bottom: 60px
   .card
     width: 49%
-    height: 255px   
+    height: 255px 
+  .packages  
+    &-card
+      width: 285px
+      max-height: 430px
+    &-card:first-child
+      width: 285px
 @media (max-width: 640px)
   .container,
-  .newsletter-wrapper
+  .newsletter-wrapper,
+  .packages-wraper
     max-width: 440px
   .reviews
+    padding-bottom: 10px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -139,14 +178,38 @@
           margin-right: -65px 
           transform: translate(50%, 0)
   .card
-    width: 100%         
+    width: 100% 
+  .packages 
+    &-card
+      width: 215px
+      max-height: 350px
+      grid-template-rows: 60% 40%
+    &-card:first-child
+      width: 215px 
+      grid-template-rows: 60% 40%
+    &-info
+      padding: 20px 20px 
+    &__name
+      font-size: 20px
+      line-height: 25px
+    &-set
+      display: none    
+    &-price
+      &__old
+        font-size: 12px
+        line-height: 14px 
+      &__new   
+        font-size: 14px
+        line-height: 16px
 @media (max-width: 480px)
   .container,
-  .newsletter-wrapper
+  .newsletter-wrapper,
+  .packages-wrapper
     max-width: 280px
   .logo
     width: 99px
   .hotel
+    padding-bottom: 30px
     &__slider
       margin-bottom: 20px
     &-slider
@@ -167,5 +230,20 @@
     &__title
       font-size: 18px
       line-height: 23px
+  .activities
+    padding-top: 40px  
+  .packages 
+    padding-top: 30px
+    &__title
+      font-size: 20px
+      line-height: 25px
+    &-card
+      width: 280px
+    &-card:first-child
+      width: 280px 
+    &-wrapper
+      grid-template-rows: 1fr 1fr 1fr 1fr
+      grid-template-columns: 1fr
+     
   
             
