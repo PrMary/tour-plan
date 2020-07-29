@@ -113,6 +113,28 @@
     display: flex
     justify-content: space-between
     align-items: center  
+  &-bottom
+    margin-top: 102px
+    display: flex
+    justify-content: flex-end
+    aligh-items: center
+    &__links            
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      margin-right: 277px
+    &__link
+      text-decoration: none
+      color: inherit  
+      &:not(:last-child)
+        &::after
+          content: ' '
+          margin-right: 10px
+    &__img
+      width: 136px
+      height: 22px  
 
 
 
