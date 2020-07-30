@@ -137,7 +137,7 @@
           display: flex
     &__user
       flex-direction: column
-      justify-content: center      
+      justify-content: center  
     &-bottom
       display: none
       position: fixed
@@ -146,10 +146,12 @@
       bottom: 0
       top: 78px
       padding-top: 30px
+       
+      overflow: auto
       &_visible
         display: block
     &-menu
-      flex-direction: column 
+      flex-direction: column
       &__item
         margin-bottom: 20px 
         &_mobile
@@ -160,7 +162,10 @@
       &_light
         color: $light 
         margin-left: 0
-        margin-top: 10px         
+        margin-top: 10px 
+  .search
+    &__input
+      width: 100%      
   .menu
     &-button
       width: 16px

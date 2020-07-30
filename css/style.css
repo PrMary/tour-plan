@@ -1760,6 +1760,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow: auto;
   }
   .navbar-bottom_visible {
     display: block;
@@ -1780,6 +1781,9 @@ template {
     color: #ffffff;
     margin-left: 0;
     margin-top: 10px;
+  }
+  .search__input {
+    width: 100%;
   }
   .menu-button {
     width: 16px;
