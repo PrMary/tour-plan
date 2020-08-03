@@ -17,7 +17,8 @@
       width: auto   
   .footer
     &__input
-      flex-basis: 100%     
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -114,7 +115,8 @@
         grid-row: 4    
         grid-column: span 5  
     &__input
-      flex-basis: 48%         
+      &-group
+        flex-basis: 48%         
 @media (max-width: 768px)
   .container, .packages-wrapper
     max-width: 576px
@@ -232,7 +234,8 @@
       width: 285px
   .footer
     &__input
-      flex-basis: 100%   
+      &-group
+        flex-basis: 48%
     &-bottom
       justify-content: space-between
       &__links
@@ -405,13 +408,34 @@
       &__links
         font-size: 10px
         line-height: 14px 
+    &__input
+      &-group
+        flex-basis: 100%    
   .modal
+    &__form
+      font-size: 12px
+      line-height: 15px
+    &__input  
+      padding: 0 15px
+      height: 40px
+    &__message
+      min-height: 90px 
+      padding-left: 15px
+      padding-right: 15px 
+    &__dialog
+      padding: 33px 25px
     &__under
       flex-direction: column
     &__button
       margin-bottom: 8px
-      width: 100%  
-
+      width: 100%     
+@media (max-height: 480px)
+  .modal
+    &__dialog
+      max-height: 300px
+      overflow: auto
+    &__form
+      margin-bottom: 10px  
      
   
             
