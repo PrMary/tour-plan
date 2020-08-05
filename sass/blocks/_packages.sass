@@ -23,7 +23,10 @@
     position: relative
     display: grid
     grid-template-rows: 50% 50%
-    grid-template-columns: 100%        
+    grid-template-columns: 100%   
+    &:hover
+      animation: pulse
+      animation-duration: 1s
   &-card:first-child
     grid-column-start: 1
     grid-column-end: 3
