@@ -116,7 +116,10 @@
         grid-column: span 5  
     &__input
       &-group
-        flex-basis: 48%         
+        flex-basis: 48% 
+  .modal
+    &__dialog
+      padding: 40px 60px              
 @media (max-width: 768px)
   .container, .packages-wrapper
     max-width: 576px
@@ -347,7 +350,7 @@
           margin-right: 6px      
   .modal
     &__dialog
-      width: 70%
+      width: 60%
       padding: 33px 45px
     &__button
       font-size: 12px
@@ -357,7 +360,13 @@
       padding: 10px
     &__info
       font-size: 11px
-      line-height: 14px        
+      line-height: 14px   
+@media ( max-width: 570px )
+  .modal
+    &__dialog
+      width: 70%
+      padding: 33px 40px
+             
 @media (max-width: 480px)
   .container,
   .newsletter-wrapper,
@@ -418,21 +427,27 @@
     &__input  
       padding: 0 15px
       height: 40px
+      &-group
+        & label  
+          font-size: 10px
+          line-height: 11px          
     &__message
       min-height: 90px 
       padding-left: 15px
       padding-right: 15px 
     &__dialog
-      padding: 33px 25px
+      width: 90%
+      padding: 33px 15px
     &__under
       flex-direction: column
     &__button
       margin-bottom: 8px
-      width: 100%     
+      width: 100% 
+
 @media (max-height: 480px)
   .modal
     &__dialog
-      max-height: 300px
+      max-height: 350px
       overflow: auto
     &__form
       margin-bottom: 10px  
