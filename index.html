@@ -5,33 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&family=Nunito:wght@400;600;800&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      as="font"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a
-            href="#"
-            class="logo"
-            data-aos="flip-down"
-            data-aos-duration="1000"
-          >
+          <a href="#" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -273,17 +268,8 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map">
-              <!--<iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041275564865!2d98.29254741470974!3d7.890750807947762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1595398266357!5m2!1sru!2sru"
-                width="100%"
-                height="213"
-                frameborder="0"
-                style="border: 0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>-->
+            <div class="map">
+              <img class="map__img" src="img/map.jpg" alt="Map" />
             </div>
             <!-- /.map -->
           </div>
@@ -607,7 +593,7 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
+        <h2 class="reviews__title">What people thinks about&nbsp;us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -735,11 +721,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div
-            class="card activities__card"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="card activities__card">
             <img
               src="img/activities/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -748,49 +730,37 @@
             <h3 class="card__title activities__card">
               The curious corner of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div
-            class="card activities__card"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <div class="card activities__card">
             <img
               src="img/activities/activity-2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div
-            class="card activities__card"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
+          <div class="card activities__card">
             <img
               src="img/activities/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div
-            class="card activities__card"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
+          <div class="card activities__card">
             <img
               src="img/activities/activity-4.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -803,13 +773,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/footer/vertical-logo.svg"
-            alt="Best Tour Plan"
-            class="logo footer__logo"
-            data-aos="flip-down"
-            data-aos-duration="1000"
-          />
+          <a href="#" class="logo footer__logo">
+            <img
+              src="img/footer/vertical-logo.svg"
+              alt="Best Tour Plan"
+              class="logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -931,10 +901,28 @@
                     alt="Icon: phone"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__contact-phones">
+                  <span
+                    >Tel (business hours) :
+                    <a class="footer__contact-phone" href="tel:2691500"
+                      >269 1500</a
+                    ></span
+                  >
+                  <span
+                    >Tel (hotline) Monday - Saturday:
+                    <a class="footer__contact-phone" href="tel:52-56-61-38"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 20:00 pm)</span
+                  >
+                  <span
+                    >Tel (hotline) Sunday:
+                    <a class="footer__contact-phone" href="tel:52-56-61-38"
+                      >52-56-61-38</a
+                    >
+                    (08:00 am – 14:00 pm)</span
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -944,7 +932,11 @@
                     alt="Icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="footer__contact-email"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -955,7 +947,7 @@
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
-                  type="email"
+                  type="text"
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
@@ -969,6 +961,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength="16"
                 />
               </div>
               <textarea
@@ -996,7 +989,7 @@
             <a href="#" class="footer-bottom__link">Cancellation&nbsp;policy</a>
           </div>
           <img
-            src="img/footer/footer-bottom.png"
+            src="img/footer/footer-bottom.jpg"
             alt="Footer Bootom Picture"
             class="footer-bottom__img"
           />
@@ -1031,6 +1024,7 @@
                 placeholder="Phone Number*"
                 name="phone"
                 required
+                minlength="16"
               />
             </div>
             <div class="modal__input-group">
@@ -1061,11 +1055,10 @@
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/map-yandex.js"></script>
   </body>
 </html>

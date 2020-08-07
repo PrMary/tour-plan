@@ -16,6 +16,8 @@
     &-card:first-child
       width: auto   
   .footer
+    &__text, &__item
+      font-size: 12px      
     &__input
       &-group
         flex-basis: 100%
@@ -123,7 +125,6 @@
 @media (max-width: 768px)
   .container, .packages-wrapper
     max-width: 576px
-    width: 92%
   body
     padding-top: 78px
   .navbar
@@ -222,7 +223,10 @@
       max-width: 576px
       width: 92%
   .reviews
-    padding-bottom: 20px   
+    padding-bottom: 20px  
+    &__title
+      font-size: 30px
+      line-height: 38px 
   .activities
     padding-top: 40px
     padding-bottom: 60px
@@ -230,6 +234,9 @@
     width: 49%
     height: 255px 
   .packages  
+    &__title
+      font-size: 30px
+      line-height: 38px 
     &-card
       width: 285px
       max-height: 430px
@@ -368,14 +375,13 @@
       padding: 33px 40px
              
 @media (max-width: 480px)
-  .container,
-  .newsletter-wrapper,
-  .packages-wrapper
-    max-width: 280px
+  .container  
+    max-width: 95%
   .logo
     width: 99px
   .hotel
-    padding-bottom: 30px
+    padding-bottom: 10px
+    padding-top: 0
     &__slider
       margin-bottom: 20px
     &-slider
@@ -390,27 +396,37 @@
         line-height: 38px
     &__title
       margin-bottom: 37px 
+      margin-top: 0    
   .subscribe
     width: 100%  
   .reviews
     &__title
       font-size: 18px
       line-height: 23px
+      margin-top: 0
+      margin-bottom: 42px
   .activities
-    padding-top: 40px  
+    padding-top: 40px 
+    &__title
+      font-size: 18px
+      line-height: 23px 
+      margin-bottom: 36px
   .packages 
     padding-top: 30px
+    padding-bottom: 40px
     &__title
       font-size: 20px
       line-height: 25px
+      margin-bottom: 30px
     &-card
-      width: 280px
+      width: 100%
     &-card:first-child
-      width: 280px 
+      width: 100% 
     &-wrapper
       grid-template-rows: 1fr 1fr 1fr 1fr
       grid-template-columns: 1fr
   .footer
+    padding-top: 70px
     &__message
       width: 100%
     &-bottom
